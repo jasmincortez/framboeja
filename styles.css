@@ -1,0 +1,168 @@
+:root {
+    --purple: #cbc9e1;
+    --white: #fffffe;
+    --green: #cdd9b5;
+    --darkgreen: #375e25;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/79/7f/56/797f562164e60ced6688e60deabb761b.jpg');
+    background-repeat: repeat;
+    background-size: 40vw;
+    font-family: cursive, 'Courier New', monospace;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    color: var(--purple);
+    background-color: var(--darkgreen);
+    font-weight: normal;
+    padding: 4px 10px;
+    font-size: 2vw;
+}
+
+.avatar {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    border-width: 0.5vw;
+    border-color: var(--purple);
+    border-style: solid;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.reels {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+}
+
+.youtubevideo {
+    max-width: 560px;
+    max-height: 315px;
+    width: 85vw;
+    height: calc(85vw / 1.77);
+    border: 10px solid var(--darkgreen);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.socials {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.minivid {
+    display: none;
+}
+
+/* BUTTONS */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: none;
+}
+
+a {
+    font-family: cursive, 'Courier New', monospace;
+    text-decoration: none;
+    color: var(--darkgreen);
+}
+
+i {
+    margin-right: 10px;
+    color: var(--darkgreen) !important;
+}
+
+.button-name {
+    margin-bottom: 30px;
+    align-items: center;
+    appearance: none;
+    background-color: var(--green);
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+        rgba(45, 35, 66, 0.15) 0 7px 13px -3px, var(--green) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: var(--purple);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'JetBrains Mono', monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-name:focus {
+    box-shadow: var(--green) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-name:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+        rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-name:active {
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media (max-width: 767px) {
+    .avatar {
+        width: 40vw;
+        height: 40vw;
+        border-width: 1.5vw;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 40px;
+        text-align: center;
+        display: block;
+    }
+    .minivid {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+}
